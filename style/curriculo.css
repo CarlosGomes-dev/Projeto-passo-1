@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --cor-primaria:  rgb(255, 255, 255);
+    --cor-secundaria: #263238;
+    --cor-terciaria:#FF725E;
+
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secudaria: "Monoton", sans-serif;                                                                                                                                                     
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+mark{
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    background-color: #f5f1f0;
+   
+}
+
+.cabecalho{
+    padding:2% 0% 0% 15% ;
+    
+ 
+ }
+ 
+ .cabecalho__menu{
+ display: flex;
+ justify-content:end;
+ padding: 0% 6%;
+ gap: 100px;
+ }
+ 
+ 
+ .cabecalho__menu__link{
+     font-family:var(--fonte-primaria);
+     font-size: 1.2rem;
+     font-weight: 400;
+     color: var(--cor-secundaria);
+     text-decoration: none;
+ }
+
+.main {
+
+   display: flex;
+   flex-direction: column;
+   padding: 2%;
+   
+   
+}
+
+.main h1{
+    text-align:center;
+    font-family: var(--fonte-secudaria);
+    font-weight: 400;
+    font-size: 3.75rem;
+    padding: 5%;
+    color: var(--cor-terciaria);
+    border-radius: 100px;
+    letter-spacing: 5px;
+
+
+ 
+}
+
+.apresentacao{
+    display: flex;
+    gap: 7%;
+    background-color: #f5f1f0;
+    border-radius: 80px;
+    padding: 2%;
+}
+
+.apresentacao__esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    border-right: 1px solid var(--cor-terciaria);
+}
+
+.apresentacao__esquerda__contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.apresentacao__esquerda__contatos img{
+   border-radius: 10px;
+   width: 5%;
+  
+}
+
+.apresentacao__esquerda__subtitulo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secudaria);
+    padding: 8% 8% 2% 8%;
+    font-weight: 400;
+}
+
+.apresentacao__esquerda__link{
+    font-size: 1.0rem;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    gap: 5px;
+    color: #FF725E;
+    
+}
+
+
+.apresentacao__esquerda__paragrafo{
+    font-size: 1.0rem;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0% 2% 0% 0%;
+}
+
+.apresentacao__esquerda__educacao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.apresentacao__esquerda__habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   
+    
+    
+}
+
+.apresentacao__esquerda__habilidades img {
+    width: 8%;
+
+}
+
+
+.apresentacao__direita {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+
+    
+}
+
+.apresentacao__direita__resumo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.apresentacao__direita__subtitulo{
+    font-size: 1.85rem;
+    font-family: var(--fonte-secudaria);
+    padding:3% 0% 3% 6%;
+    font-weight: 400;
+}
+
+.apresentacao__direita__link{
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    gap: 5px;
+    color: #FF725E;
+    
+}
+
+
+.apresentacao__direita__paragrafo{
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.apresentacao__direita__experiencia__profissional{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__direita__experiencia__profissional__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 1.35rem;
+}
+
+.apresentacao-funcoes{
+    list-style: none;
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 0 0 8%;
+    color: #263238;
+
+}
+
+
+
+.rodape{
+    
+    background-color:var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    padding: 23.64px;
+   text-align: center;
+   font-family:var(--fonte-primaria);
+   font-size: 1.5rem;
+   font-weight: 400;
+   }
+
+@media (max-width:910px) {
+
+    .cabecalho{
+        padding:5% 5% 5% 5%;
+      
+     }
+     
+     .cabecalho__menu{
+        display: flex;
+        justify-content:center;
+        gap: 40px;
+
+    
+    
+     }
+     
+     
+     .cabecalho__menu__link{
+         font-family:var(--fonte-primaria);
+         font-size: 1.4rem;
+         font-weight: 400;
+         color: var(--cor-secundaria);
+         text-decoration: none;
+     }
+        .main h1{
+        padding: 2% 0% 4% 0%;
+        }
+        .apresentacao{
+            display: flex;
+            flex-direction: column;
+        }
+        .apresentacao__esquerda {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            width: 90%;
+            border-right: none;
+            padding: 3% 5% 3% 5%;
+            border-bottom: solid 1px #FF725E;
+        }
+        .apresentacao__esquerda__contatos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+        }
+        .apresentacao__esquerda__contatos img{
+        width: 9%;
+        }
+        .apresentacao__esquerda__subtitulo{
+            display: flex;
+            text-align: center;
+            font-size: 1.2rem;
+            justify-content: center;
+            padding: 8% 2% 2% 8%;
+            font-weight: 400;
+        }
+        .apresentacao__esquerda__link{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            color: #FF725E;
+
+        }
+        .apresentacao__esquerda__paragrafo{
+            display: flex;
+            font-size: 0.8rem;
+            text-align: center;
+            justify-content:center;
+            gap: 5px;
+            align-items: center;
+            padding: 0% 2% 0% 0%;
+        }
+        .apresentacao__esquerda__educacao{
+            display: flex;
+            gap: 15px;
+            width: 30%;
+        }
+        .apresentacao__esquerda__habilidades{
+            gap: 12px;
+            width: 30%;
+        }
+        .apresentacao__esquerda__habilidades img {
+            width: 8%;
+            display: flex;
+        }
+    
+        .apresentacao__direita {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 90%;
+            padding: 3% 5% 3% 5%;
+        
+            
+        }
+        
+        .apresentacao__direita__subtitulo{
+            padding:3% 6% 3% 6%;
+            text-align: center;
+        }
+        .apresentacao__direita__paragrafo{
+            font-family: var(--fonte-primaria);
+            text-align: center;
+        }
+        .apresentacao__direita__experiencia__profissional{
+            gap: 20px;
+        }
+        .apresentacao__direita__experiencia__profissional__subtitulo{
+            font-family: var(--fonte-primaria);
+            font-weight: 500;
+            font-size: 1.35rem;
+            text-align: center;
+        }
+        
+        .apresentacao-funcoes{
+            list-style: none;
+            font-size: 0.9rem;
+            font-family: var(--fonte-primaria);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 2% 5% 2% 5%;
+            color: #263238;
+            text-align: center;
+        
+        }
+     
+}
+
+@media (max-width:600px) {
+
+    .cabecalho{
+        padding:0;
+        width: 100%;
+      
+     }
+     
+     .cabecalho__menu{
+        display: flex;
+        justify-content:center;
+        gap: 20px;
+
+     }
+     
+     
+     .cabecalho__menu__link{
+         font-family:var(--fonte-primaria);
+         font-size: 1rem;
+         padding: 2%;
+         font-weight: 400;
+         color: var(--cor-secundaria);
+         text-decoration: none;
+     }
+        .main h1{
+        padding: 2% 0% 4% 0%;
+        font-size: 2.5rem;
+        }
+        .apresentacao{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .apresentacao__esquerda {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 90%;
+            border-right: none;
+            padding:5%;
+            border-bottom: solid 1px #FF725E;
+        }
+        .apresentacao__esquerda__contatos{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 90%;
+            padding-bottom:5% ;
+            border-bottom: solid 1px #FF725E;
+        }
+        .apresentacao__esquerda__contatos img{
+        width: 5%;
+        }
+        .apresentacao__esquerda__subtitulo{
+            display: flex;
+            font-size: 1.4rem;
+            text-align: center;
+            justify-content: center;
+            padding: 8% 4% 4% 8%;
+            font-weight: 400;
+        }
+        .apresentacao__esquerda__link{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            color: #FF725E;
+            font-size: 0.8rem;
+        }
+        .apresentacao__esquerda__paragrafo{
+            display: flex;
+            text-align: center;
+            justify-content:center;
+            gap: 5px;
+            align-items: center;
+            padding: 0% 2% 0% 0%;
+            font-size: 0.8rem;
+        }
+        .apresentacao__esquerda__educacao{
+            display: flex;
+            gap: 10px;
+            width: 90%;
+            padding-bottom:5% ;
+            border-bottom: solid 1px #FF725E;
+        }
+        .apresentacao__esquerda__habilidades{
+            gap: 8px;
+            width: 90%;
+        }
+        .apresentacao__esquerda__habilidades img {
+            width: 8%;
+            display: flex;
+        }
+    
+        .apresentacao__direita {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 90%;
+            padding: 3% 5% 3% 5%;
+        
+            
+        }
+        
+        .apresentacao__direita__subtitulo{
+            padding:3% 6% 3% 6%;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .apresentacao__direita__paragrafo{
+            font-family: var(--fonte-primaria);
+            font-size: 1.2rem;
+            text-align: center;
+            padding-bottom:5% ;
+            border-bottom: solid 1px #FF725E;
+        }
+        .apresentacao__direita__experiencia__profissional{
+            gap: 20px;
+        }
+        .apresentacao__direita__experiencia__profissional__subtitulo{
+            font-family: var(--fonte-primaria);
+            font-weight: 500;
+            font-size: 1.35rem;
+            text-align: center;
+            
+        }
+        
+        .apresentacao-funcoes{
+            list-style: none;
+            font-size: 1rem;
+            font-family: var(--fonte-primaria);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 2% 5% 2% 5%;
+            color: #263238;
+            text-align: center;
+            padding-bottom:5% ;
+          
+        
+        }
+     
+}
